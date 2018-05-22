@@ -64,6 +64,7 @@ public class AppModule {
     @Singleton
     public Context provideContext(){
         return  context;
+
     }
 
     //提供网络请求的接口
