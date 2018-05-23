@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MyIxinghui</string>
+    <string name="title_activity_base_acticity">BaseActicity</string>
 </resources>

@@ -1,13 +1,10 @@
 package com.example.zhangyifn.myixinghui;
 
 import android.app.Application;
-import android.util.Log;
 
-import com.example.zhangyifn.myixinghui.di.component.AppComponent;
-import com.example.zhangyifn.myixinghui.di.component.DaggerAppComponent;
-import com.example.zhangyifn.myixinghui.di.module.AppModule;
-
-import dagger.internal.DaggerCollections;
+import com.example.zhangyifn.myixinghui.base.component.AppComponent;
+import com.example.zhangyifn.myixinghui.base.component.DaggerAppComponent;
+import com.example.zhangyifn.myixinghui.base.module.AppModule;
 
 /** e
  * Created by zhangyifn on 2018/5/17.

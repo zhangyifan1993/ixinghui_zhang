@@ -1,4 +1,4 @@
-package com.example.zhangyifn.myixinghui.di.module;
+package com.example.zhangyifn.myixinghui.base.module;
 
 import android.content.Context;
 
@@ -25,7 +25,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class AppModule {
     //连接超时
     private static final long OUTTIME = 10;
-    String baseUrl= Protocol.CLIENT_HOST_URL;
+    String baseUrl= "http://api.ixinghui.com:81/ixinghui/";
     private Context context;
 
     HttpLoggingInterceptor loggingInterceptor = new HttpLoggingInterceptor();

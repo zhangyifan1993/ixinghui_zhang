@@ -1,8 +1,8 @@
-package com.example.zhangyifn.myixinghui.di.component;
+package com.example.zhangyifn.myixinghui.base.component;
 
 import android.content.Context;
 
-import com.example.zhangyifn.myixinghui.di.module.AppModule;
+import com.example.zhangyifn.myixinghui.base.module.AppModule;
 import com.example.zhangyifn.myixinghui.http.APIService;
 
 import javax.inject.Singleton;
