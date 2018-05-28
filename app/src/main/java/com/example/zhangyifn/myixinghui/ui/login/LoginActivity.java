@@ -1,6 +1,5 @@
 package com.example.zhangyifn.myixinghui.ui.login;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.example.zhangyifn.myixinghui.R;
@@ -18,7 +17,7 @@ public class LoginActivity extends BaseActicity {
 
     @Override
     protected void initUi() {
-         loginFragment =new  LoginFragment();
+         loginFragment =new LoginFragment();
          replaceFragment(R.id.fragmentContent,loginFragment);
     }
 

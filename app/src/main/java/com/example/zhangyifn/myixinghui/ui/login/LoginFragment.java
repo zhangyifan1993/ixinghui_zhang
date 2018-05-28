@@ -9,14 +9,15 @@ import com.example.zhangyifn.myixinghui.App;
 import com.example.zhangyifn.myixinghui.R;
 import com.example.zhangyifn.myixinghui.base.basemvp.BaseFragment;
 import com.example.zhangyifn.myixinghui.bean.login.LoginResponseBean;
+import com.example.zhangyifn.myixinghui.ui.login.ILoginView;
+import com.example.zhangyifn.myixinghui.ui.login.LoginPresenter;
 import com.example.zhangyifn.myixinghui.utils.MD5;
-import com.hannesdorfmann.mosby.mvp.MvpPresenter;
 
 /**
  * Created by zhangyifn on 2018/5/23.
  */
 
-public class LoginFragment extends BaseFragment<ILoginView,LoginPresenter> implements ILoginView{
+public class LoginFragment extends BaseFragment<ILoginView,LoginPresenter> implements ILoginView {
 
     @Override
     protected View getView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

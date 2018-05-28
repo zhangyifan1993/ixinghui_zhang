@@ -1,13 +1,117 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/c4"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
 
+    <com.example.zhangyifn.myixinghui.view.MyTitle
+        android:id="@+id/my_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <include layout="@layout/line_shape"></include>
     <ImageView
-        android:id="@+id/login"
-        android:layout_gravity="center"
-        android:background="@color/colorAccent"
-        android:layout_width="200dp"
-        android:layout_height="50dp" />
+        android:layout_marginTop="30dp"
+        android:src="@mipmap/ic_launcher"
+        android:layout_width="77dp"
+        android:layout_height="77dp" />
+    <com.example.zhangyifn.myixinghui.view.MyEditText
+        android:id="@+id/phone"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="30dp"/>
 
+    <com.example.zhangyifn.myixinghui.view.MyEditText
+        android:id="@+id/password"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="320dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="44dp"
+        android:background="@mipmap/rectangle_login_bg"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/login"
+        android:textColor="@color/c4"
+        android:textSize="17sp"/>
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp">
+
+        <TextView
+            android:id="@+id/forget"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forget"
+            android:textColor="@color/main_color"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/regist_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/regist_phone"
+            android:textColor="@color/main_color"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_weight="1"
+                android:background="#969696"
+                android:layout_width="1dp"
+                android:layout_height="2px"></View>
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="· 其他方式登陆 ·"
+                android:textSize="13sp"
+                android:textColor="#969696"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <View
+                android:layout_weight="1"
+                android:background="#969696"
+                android:layout_width="1dp"
+                android:layout_height="2px"></View>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/weixin_login"
+                android:src="@mipmap/weixin_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:id="@+id/qq_login"
+                android:layout_marginLeft="125dp"
+                android:src="@mipmap/qq_login"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
 </LinearLayout>

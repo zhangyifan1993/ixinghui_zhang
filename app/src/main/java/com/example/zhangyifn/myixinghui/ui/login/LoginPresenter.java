@@ -11,7 +11,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 import rx.Observer;
-import rx.android.MainThreadSubscription;
 import rx.android.schedulers.AndroidSchedulers;
 import rx.schedulers.Schedulers;
 
